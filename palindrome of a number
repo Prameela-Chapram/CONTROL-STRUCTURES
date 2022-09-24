@@ -1,0 +1,14 @@
+#Program to check whether the given number is a Palindrome or  Not a Palindrome is discussed here. Any number is said to be a palindrome if the original number and the reverse of the original number are the same.
+
+CODE:
+n=int(input())
+sum=n
+rev=0
+while n>0:
+    b=n%10
+    rev=rev*10+b
+    n=n//10
+if(sum==rev):
+    print('palindrome')
+else:
+    print('not a palindrome')
