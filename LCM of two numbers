@@ -1,0 +1,11 @@
+#Write a program to find LCM of two numbers is discussed here. Two numbers are obtained as input and the prime factors of both the numbers are found. The product of the union of prime factors of both the numbers gives the LCM of the two numbers.
+#CODE:
+
+def lcm(x,y,z):
+    if(x*z)%y==0:
+        print('lcm of',x,'and',y,'is', x*z)
+    else:
+        lcm(x,y,z+1)
+a=int(input())
+b=int(input())
+c=lcm(a,b,1)
